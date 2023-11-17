@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* 半透明背景 */
+  border-bottom: 1px solid #FFFFFF; /* 白色边框 */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+  position: relative;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 192, 203, 0.5); /* 鼠标悬停时的淡粉色背景 */
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: pink; /* 淡粉色描边 */
+  transition: width 0.3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img/background.jpg'); /* 设置背景图片 */
+    background-size: cover; /* 背景图片铺满整个屏幕 */
+    background-repeat: no-repeat; /* 不重复显示背景图片 */
+    color: #FFC0CB; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* 使用淡粉色背景颜色，设置透明度 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* A subtle shadow to lift the container */
+    border-radius: 8px;
+}
+
+h1 {
+    color: #FFC0CB; /* A purple tone similar to the image uploaded */
+}
+
+a {
+    color: #FFC0CB; /* A darker purple tone for links, similar to the image uploaded */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
