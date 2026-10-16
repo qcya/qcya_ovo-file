@@ -1,160 +1,149 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f9f7ff">
-  <meta name="description" content="青春沿岸 QCYA 的个人主页。写代码、做视频、制作游戏，把奇怪的想法变成现实。">
-  <meta property="og:title" content="青春沿岸 · QCYA">
-  <meta property="og:description" content="欢迎来到青春沿岸的小小世界。公开作品、个人介绍，以及原创角色星海。">
+  <meta name="theme-color" content="#f9faff">
+  <meta name="description" content="青春沿岸 QCYA 的个人主页，记录公开项目、编程与视频创作。">
   <meta property="og:type" content="website">
-  <title>青春沿岸 · QCYA | Personal Space</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css">
+  <meta property="og:title" content="青春沿岸 QCYA — 个人主页">
+  <meta property="og:description" content="你好，这里是青春沿岸。一个喜欢写代码、做视频和折腾新点子的普通大学生。">
+  <title>青春沿岸 / QCYA — 个人主页</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/site.css?v=3">
   <link rel="stylesheet" href="static/APlayer-1.10.1/dist/APlayer.min.css">
-  <script src="assets/site.js" defer></script>
+  <script defer src="assets/site.js?v=3"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">跳转到主要内容</a>
-  <div class="page-atmosphere" aria-hidden="true"><span class="orb orb-one"></span><span class="orb orb-two"></span><span class="orb orb-three"></span></div>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
 
   <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="#home" aria-label="青春沿岸，返回首页"><img class="brand-avatar" src="assets/avatar.webp" width="39" height="39" alt="青春沿岸头像" loading="eager"><span>青春沿岸 <small>/ QCYA</small></span></a>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" aria-label="青春沿岸，返回首页">
+        <img class="brand-avatar" src="assets/avatar.webp" width="34" height="34" alt="" decoding="async">
+        <span>青春沿岸 <small>QCYA</small></span>
+      </a>
       <nav class="site-nav" id="site-nav" aria-label="主导航">
-        <a href="#home" class="nav-link active">首页</a>
-        <a href="#about" class="nav-link">关于</a>
-        <a href="#projects" class="nav-link">作品</a>
-        <a href="#xinghai" class="nav-link">星海</a>
-        <a href="#music" class="nav-link">音乐</a>
-        <a href="#contact" class="nav-link">联系</a>
+        <a class="nav-link active" href="#home" aria-current="location">首页</a>
+        <a class="nav-link" href="#about">关于</a>
+        <a class="nav-link" href="#projects">作品</a>
+        <a class="nav-link" href="#music">音乐</a>
+        <a class="nav-link" href="#contact">联系</a>
       </nav>
       <div class="nav-actions">
-        <button id="theme-toggle" class="icon-button" type="button" title="切换主题" aria-label="切换深浅色主题"><span id="theme-icon" aria-hidden="true">☾</span></button>
-        <button id="menu-toggle" class="icon-button menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="展开导航"><span aria-hidden="true">☰</span></button>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题"><span id="theme-icon" aria-hidden="true">☾</span></button>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="展开导航"><span aria-hidden="true">☰</span></button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+    <section class="shell hero" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> WELCOME TO MY LITTLE UNIVERSE</span>
-        <p class="hello">你好，这里是青春沿岸。 <span aria-hidden="true">✿</span></p>
-        <h1 id="hero-title">这里是<span class="gradient-text">青春沿岸</span><span class="headline-dot">.</span></h1>
-        <p class="hero-en">Hey, I'm QCYA. Nice to meet you!</p>
-        <p class="hero-desc">普通大学生程序员，喜欢二次元、写代码和制作视频。<br>这里记录我已经公开的作品，也收藏一些关于创作的小想法。</p>
-        <div class="hero-tags" aria-label="兴趣标签"><span>⌘ Coding</span><span>✦ ACG</span><span>◇ Game Dev</span><span>♫ Music</span></div>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">看看我的作品 <span aria-hidden="true">↗</span></a>
-          <a class="button button-soft" href="#about">认识一下我 <span aria-hidden="true">↓</span></a>
+        <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> PERSONAL SPACE <span class="eyebrow-rule" aria-hidden="true"></span> EST. 2023</div>
+        <p class="hero-intro">你好，这里是</p>
+        <h1 id="hero-title"><span>青春沿岸</span><span class="hero-title-en">/ QCYA<span class="period">.</span></span></h1>
+        <p class="hero-lead">写点代码，做点视频，<br><span class="gradient-ink">把想法慢慢做出来。</span></p>
+        <p class="hero-desc">一个喜欢编程、二次元和数字创作的普通大学生。这里展示我公开的作品，也留下一些关于互联网与技术的记录。</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">浏览公开作品 <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://github.com/qcya" target="_blank" rel="noopener noreferrer">前往 GitHub <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="hero-social">
-          <span class="social-label">FIND ME ON</span>
-          <a href="https://github.com/qcya" target="_blank" rel="noopener noreferrer" aria-label="访问 GitHub">GitHub ↗</a>
-          <a href="https://space.bilibili.com/1576380674" target="_blank" rel="noopener noreferrer" aria-label="访问青春沿岸的 Bilibili 个人空间">Bilibili ↗</a>
-        </div>
+        <div class="hero-subline"><span>PYTHON</span><span>FRONT-END</span><span>VIDEO</span><span>AI</span></div>
       </div>
-      <div class="hero-art xinghai-stage">
-        <div class="xinghai-stage-grid" aria-hidden="true"></div>
-        <div class="xinghai-halo" aria-hidden="true"></div>
-        <div class="xinghai-orbit orbit-a" aria-hidden="true"></div>
-        <div class="xinghai-orbit orbit-b" aria-hidden="true"></div>
-        <span class="xinghai-spark spark-a" aria-hidden="true">✦</span>
-        <span class="xinghai-spark spark-b" aria-hidden="true">✧</span>
-        <span class="xinghai-spark spark-c" aria-hidden="true">✦</span>
-        <img class="xinghai-figure" src="assets/xinghai.webp" width="300" height="308" alt="原创角色星海：银白色短长发、蓝色眼睛、粉色针织外套，头顶有蓝粉色星环" fetchpriority="high">
-        <div class="xinghai-nameplate"><span class="nameplate-star">✧</span><span><strong>星海 · XINGHAI</strong><small>ORIGINAL CHARACTER</small></span></div>
-        <span class="xinghai-credit">CHARACTER DESIGN / 星海</span>
+      <div class="hero-graphic" aria-label="粉蓝渐变的抽象平面设计：几何圆环、方格和 QCYA 字样">
+        <div class="graphic-grid" aria-hidden="true"></div>
+        <div class="graphic-head"><span>DESIGN / DEVELOP / CREATE</span><span>✳ 001</span></div>
+        <div class="graphic-orbit orbit-one" aria-hidden="true"></div>
+        <div class="graphic-orbit orbit-two" aria-hidden="true"></div>
+        <div class="graphic-disc disc-pink" aria-hidden="true"></div>
+        <div class="graphic-disc disc-blue" aria-hidden="true"></div>
+        <div class="graphic-cross cross-top" aria-hidden="true">✳</div>
+        <div class="graphic-cross cross-bottom" aria-hidden="true">✦</div>
+        <div class="graphic-main-mark" aria-hidden="true"><span>Q<span class="mark-accent">C</span></span><span><span class="mark-accent">Y</span>A</span></div>
+        <div class="graphic-stamp" aria-hidden="true"><span class="stamp-dot"></span> KEEP MAKING</div>
+        <div class="graphic-foot"><span>PERSONAL<br>PORTFOLIO</span><span>© QCYA <span class="graphic-arrow">↗</span></span></div>
       </div>
     </section>
 
-    <div class="marquee-divider" aria-hidden="true"><div>CODE · CREATION · IMAGINATION · 青春沿岸 · CODE · CREATION · IMAGINATION · 青春沿岸 ·</div></div>
+    <div class="ticker" aria-hidden="true"><div class="ticker-inner">CODE <span>✦</span> CREATE <span>✦</span> EXPLORE <span>✦</span> DESIGN <span>✦</span> CODE <span>✦</span> CREATE <span>✦</span> EXPLORE <span>✦</span> DESIGN</div></div>
 
-    <section class="section-shell content-section" id="about" aria-labelledby="about-title">
-      <div class="section-heading"><div><span class="section-kicker">01 / ABOUT ME</span><h2 id="about-title">关于<span class="gradient-text">我</span><span class="title-decoration">✿</span></h2></div><p>不止是代码，也有各种各样的奇思妙想。</p></div>
+    <section class="shell section" id="about" aria-labelledby="about-title">
+      <div class="section-header"><div><span class="section-index">01 / ABOUT</span><h2 id="about-title">简单<span class="gradient-ink">介绍</span><span class="heading-period">.</span></h2></div><p>一个简短的自我介绍。</p></div>
       <div class="about-layout">
-        <article class="panel about-main">
-          <span class="corner-mark" aria-hidden="true">✧</span>
-          <p class="panel-eyebrow">A LITTLE INTRODUCTION</p>
-          <h3>你好，这里是 <span class="gradient-text">QCYA</span>！</h3>
-          <p>我喜欢互联网、二次元和各种有趣的技术。平时会用 Python 和前端技术写点小工具，也会做视频、尝试游戏开发，以及探索 AI 能带来多少新玩法。</p>
-          <p>这个网站从最初的一张 HTML 小卡片开始，经历了几次修改。现在它更像一个真正的个人主页：展示公开作品，也记录我的兴趣。</p>
-          <div class="about-quote"><span aria-hidden="true">“</span>让每一个不着边际的想法，都有机会运行起来。<span aria-hidden="true">”</span></div>
+        <article class="surface about-card">
+          <div class="about-top"><span class="mini-label">HELLO, WORLD!</span><span class="corner-diamond" aria-hidden="true">✧</span></div>
+          <h3>不是什么大佬，<br>只是喜欢<span class="gradient-ink">做点东西</span>。</h3>
+          <p>平时会写 Python、前端和各种小工具，也喜欢做视频、尝试新技术。比起堆砌头衔，我更愿意在这里放一些确实完成并公开了的东西。</p>
+          <p>最早做这个网页时，只想拥有一个自己的网络角落。现在重新整理它，让设计更干净，也让内容更有用。</p>
+          <div class="about-signature"><span>“</span>先让想法运行起来，再慢慢把它做好。<span>”</span></div>
+          <div class="about-geometric" aria-hidden="true"><i></i><i></i><i></i></div>
         </article>
-        <div class="about-side">
-          <article class="panel profile-panel">
-            <div class="profile-title"><img class="profile-avatar" src="assets/avatar.webp" width="42" height="42" alt="青春沿岸的头像" loading="lazy"><div><strong>个人资料</strong><small>PROFILE CARD</small></div></div>
-            <dl class="profile-list"><div><dt>网络昵称</dt><dd>青春沿岸 / QCYA</dd></div><div><dt>主要兴趣</dt><dd>编程 · ACG · 创作</dd></div><div><dt>最近研究</dt><dd>AI / 互动体验</dd></div><div><dt>当前状态</dt><dd><span class="status-dot" aria-hidden="true"></span> 持续折腾中</dd></div></dl>
+        <div class="about-aside">
+          <article class="surface identity-card">
+            <div class="identity-header"><img src="assets/avatar.webp" class="identity-avatar" width="48" height="48" alt="青春沿岸的头像" loading="lazy" decoding="async"><div><strong>青春沿岸</strong><span>@qcya</span></div><span class="identity-status">● Active</span></div>
+            <div class="identity-divider"></div>
+            <dl class="identity-facts">
+              <div><dt>身份</dt><dd>学生 / 开发者 / 创作者</dd></div>
+              <div><dt>兴趣</dt><dd>编程 · 二次元 · 视频</dd></div>
+              <div><dt>这里展示</dt><dd>已公开的作品</dd></div>
+            </dl>
           </article>
-          <article class="panel skill-panel">
-            <div class="skill-heading"><strong>技能与兴趣</strong><span>SKILL SET</span></div>
-            <div class="skill-tags"><span>Python</span><span>HTML / CSS</span><span>JavaScript</span><span>AI &amp; TTS</span><span>Unity / 团结</span><span>Video Editing</span></div>
-          </article>
+          <article class="surface skills-card"><div class="skill-top"><h3>常用工具</h3><small>TOOLBOX / 02</small></div><div class="skills"><span>Python</span><span>HTML / CSS</span><span>JavaScript</span><span>AI</span><span>Video Editing</span><span>Git / GitHub</span></div><div class="skills-rule"><span></span><span></span><span></span></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section-shell content-section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><div><span class="section-kicker">02 / PUBLIC PROJECTS</span><h2 id="projects-title">公开<span class="gradient-text">作品</span><span class="title-decoration">✧</span></h2></div><p>以下项目均有公开页面，点击卡片即可访问。</p></div>
-      <div class="filters" role="group" aria-label="筛选公开项目">
-        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">全部</button>
-        <button class="filter-button" type="button" data-filter="app" aria-pressed="false">桌面应用</button>
+    <section class="shell section" id="projects" aria-labelledby="projects-title">
+      <div class="section-header"><div><span class="section-index">02 / OPEN PROJECTS</span><h2 id="projects-title">公开<span class="gradient-ink">作品</span><span class="heading-period">.</span></h2></div><p>只放公开项目，每个入口都指向真实仓库。</p></div>
+      <div class="filters" role="group" aria-label="筛选项目">
+        <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">全部 <span>03</span></button>
+        <button class="filter-button" type="button" data-filter="app" aria-pressed="false">应用</button>
         <button class="filter-button" type="button" data-filter="plugin" aria-pressed="false">插件</button>
         <button class="filter-button" type="button" data-filter="site" aria-pressed="false">网站</button>
       </div>
-      <div class="project-grid public-projects">
-        <article class="project-card" data-category="app">
-          <div class="project-visual visual-music"><span class="project-number">01 / DESKTOP</span><div class="visual-center"><span class="visual-glyph">♫</span><span class="visual-micro">MUSIC DOWNLOADER</span></div><span class="visual-doodle" aria-hidden="true">♪ ♫ ♪</span></div>
-          <div class="project-info"><div class="project-topline"><span class="project-type">公开仓库 · Windows</span><span class="project-state">可查看</span></div><h3>音乐下载器</h3><p>音乐搜索与下载、本地播放、歌单整理和同步歌词，持续打磨的桌面工具。</p><div class="project-footer"><span class="project-stack">Electron · Python</span><a href="https://github.com/qcya/netease-music-downloader" target="_blank" rel="noopener noreferrer">查看项目 ↗</a></div></div>
+      <div class="project-grid">
+        <article class="project-card surface" data-category="app">
+          <div class="project-visual project-v-a" aria-hidden="true"><div class="vis-top"><span>01 · APPLICATION</span><span>↗</span></div><div class="vis-disc vis-disc-a"><span>♫</span></div><div class="vis-micro">SOUND / PLAYER / TOOL</div></div>
+          <div class="project-body"><span class="project-meta">ELECTRON / PYTHON</span><h3>音乐下载器</h3><p>集音乐下载、本地播放、歌单整理与同步歌词于一体的 Windows 桌面工具。</p><a class="project-link" href="https://github.com/qcya/netease-music-downloader" target="_blank" rel="noopener noreferrer" aria-label="查看音乐下载器的公开 GitHub 仓库">访问项目源码 <span>↗</span></a></div>
         </article>
-        <article class="project-card" data-category="plugin">
-          <div class="project-visual visual-stellar"><span class="project-number">02 / PLUGIN</span><div class="visual-center"><span class="visual-glyph">⌘</span><span class="visual-micro">ASTRBOT PLUGIN</span></div><span class="visual-doodle" aria-hidden="true">✦ ⋆ ✧</span></div>
-          <div class="project-info"><div class="project-topline"><span class="project-type">公开仓库 · AstrBot</span><span class="project-state">可查看</span></div><h3>小白助手</h3><p>面向 QQ 群的管理与发言统计插件，包含排行榜、入群欢迎及可配置的管理功能。</p><div class="project-footer"><span class="project-stack">Python · AstrBot</span><a href="https://github.com/qcya/astrbot_plugin_su_xiaobai" target="_blank" rel="noopener noreferrer">查看项目 ↗</a></div></div>
+        <article class="project-card surface" data-category="plugin">
+          <div class="project-visual project-v-b" aria-hidden="true"><div class="vis-top"><span>02 · PLUGIN</span><span>↗</span></div><div class="vis-code"><span>&lt;/&gt;</span><i></i><i></i></div><div class="vis-micro">BOT / MANAGEMENT / DATA</div></div>
+          <div class="project-body"><span class="project-meta">PYTHON / ASTRBOT</span><h3>小白助手</h3><p>用于 QQ 群管理和发言统计的 AstrBot 插件，包含排行榜和可配置功能。</p><a class="project-link" href="https://github.com/qcya/astrbot_plugin_su_xiaobai" target="_blank" rel="noopener noreferrer" aria-label="查看小白助手的公开 GitHub 仓库">访问项目源码 <span>↗</span></a></div>
         </article>
-        <article class="project-card" data-category="site">
-          <div class="project-visual visual-video"><span class="project-number">03 / WEBSITE</span><div class="visual-center"><span class="visual-glyph">✧</span><span class="visual-micro">MY PERSONAL SPACE</span></div><span class="visual-doodle" aria-hidden="true">○ ✧ □</span></div>
-          <div class="project-info"><div class="project-topline"><span class="project-type">公开仓库 · 静态网站</span><span class="project-state">本站</span></div><h3>青春沿岸的个人主页</h3><p>从最初的 HTML 小卡片，到现在由星海陪伴的个人空间。</p><div class="project-footer"><span class="project-stack">HTML · CSS · JavaScript</span><a href="https://github.com/qcya/qcya_ovo-file" target="_blank" rel="noopener noreferrer">查看源码 ↗</a></div></div>
+        <article class="project-card surface" data-category="site">
+          <div class="project-visual project-v-c" aria-hidden="true"><div class="vis-top"><span>03 · WEB</span><span>↗</span></div><div class="vis-ui"><div><b></b><b></b><b></b></div><strong>QCYA<span>.</span></strong><small>PERSONAL SPACE</small></div><div class="vis-micro">HTML / CSS / JS</div></div>
+          <div class="project-body"><span class="project-meta">STATIC WEBSITE</span><h3>这个个人主页</h3><p>从最初的 HTML 小页面开始，逐步改造成现在的响应式个人空间。</p><a class="project-link" href="https://github.com/qcya/qcya_ovo-file" target="_blank" rel="noopener noreferrer" aria-label="查看个人主页的公开 GitHub 仓库">访问项目源码 <span>↗</span></a></div>
         </article>
       </div>
-      <p class="project-note">只展示已公开的项目。新的作品会在发布后再加入。</p>
     </section>
 
-    <section class="section-shell content-section" id="story" aria-labelledby="story-title">
-      <div class="section-heading"><div><span class="section-kicker">03 / LITTLE MEMORIES</span><h2 id="story-title">网站<span class="gradient-text">小记</span><span class="title-decoration">♡</span></h2></div><p>有些旧东西，不一定需要彻底丢掉。</p></div>
-      <div class="story-layout">
-        <div class="story-intro panel"><span class="story-symbol" aria-hidden="true">✉</span><h3>写给过去的自己</h3><p>最开始做这个网站的时候，连页面布局都在摸索。虽然它只是一个半成品，但它确实承载了第一次让网页运行起来的快乐。</p><p>所以这次改版，继续保留了当年的图片素材，也保留了那份“想做个自己的主页”的心情。</p></div>
-        <ol class="timeline"><li><span class="timeline-dot"></span><div><small>THEN</small><h3>第一次写网页</h3><p>从简单的 HTML 和 CSS 开始，拼出属于自己的那张小卡片。</p></div></li><li><span class="timeline-dot"></span><div><small>ALONG THE WAY</small><h3>越来越多的奇怪点子</h3><p>视频、脚本、工具、游戏……想做的东西越来越多。</p></div></li><li><span class="timeline-dot"></span><div><small>NOW</small><h3>新页面，新起点</h3><p>让它成为真正能展示创作和记录成长的个人空间。</p></div></li></ol>
+    <section class="shell section journey-section" id="story" aria-labelledby="story-title">
+      <div class="section-header"><div><span class="section-index">03 / A SMALL NOTE</span><h2 id="story-title">从第一行<span class="gradient-ink">代码</span>开始<span class="heading-period">.</span></h2></div><p>保留一点旧站的回忆。</p></div>
+      <div class="journey-panel surface">
+        <div class="journey-display" aria-hidden="true"><span class="journey-index">MEMORY / 001</span><span class="journey-shape"><b></b></span><span class="journey-caption">THE FIRST<br>HELLO WORLD.</span></div>
+        <div class="journey-copy"><span class="mini-label">THEN → NOW</span><h3>那个半成品网页，<br>也是一个起点。</h3><p>第一次尝试 HTML 和 CSS 的时候，只要页面能在浏览器里打开，就已经很有成就感。现在回头看，它很简单，但也很有纪念意义。</p><p>所以不必假装它从一开始就很完善。把它认真做好，就是这次改版的全部意义。</p></div>
       </div>
     </section>
 
-    <section class="section-shell content-section oc-section" id="xinghai" aria-labelledby="xinghai-title">
-      <div class="section-heading"><div><span class="section-kicker">04 / ORIGINAL CHARACTER</span><h2 id="xinghai-title">关于<span class="gradient-text">星海</span><span class="title-decoration">✦</span></h2></div><p>这次网站视觉的主角，也是我的原创角色。</p></div>
-      <div class="oc-showcase panel">
-        <div class="oc-showcase-figure"><span class="oc-arc" aria-hidden="true"></span><img src="assets/xinghai.webp" width="300" height="308" loading="lazy" alt="星海原创角色立绘"></div>
-        <div class="oc-showcase-content">
-          <span class="oc-kicker">XINGHAI · 星海</span>
-          <h3>星海 <span>／ Xinghai</span></h3>
-          <p>银白色头发、蓝色眼睛、蓝粉色星环，还有标志性的粉色针织外套。网站里的星星、轨道与柔和的粉蓝配色，都来自她的设计元素。</p>
-          <p>这里先用我自己的角色原图装点主页，以后想给她增加更多互动时，再慢慢完善。</p>
-          <div class="oc-features"><span>✦ 星环</span><span>✧ 粉蓝</span><span>♡ 银白发</span></div>
-        </div>
+    <section class="shell section" id="music" aria-labelledby="music-title">
+      <div class="section-header"><div><span class="section-index">04 / MUSIC CORNER</span><h2 id="music-title">音乐<span class="gradient-ink">角落</span><span class="heading-period">.</span></h2></div><p>一个可以选择打开的小功能。</p></div>
+      <div class="music-board surface">
+        <div class="music-copy"><span class="mini-label">PRESS PLAY / IF YOU LIKE</span><h3>给写代码的时间<br>加一点背景音乐。</h3><p>保留旧站的歌单入口，但不自动加载或播放。只有点击按钮后，才会连接第三方音乐服务。</p>
+        <button class="button button-primary" id="music-load" type="button">载入旧站歌单 <span aria-hidden="true">♫</span></button><p class="music-status" id="music-status" role="status" aria-live="polite">第三方歌单可能失效；不影响本站其他内容。</p></div>
+        <div class="music-panel"><div class="music-geometry" aria-hidden="true"><div class="music-vinyl"><span class="record-label">QCYA<br>STEREO</span></div><div class="record" aria-hidden="true"></div><span class="music-note">♪</span></div><div id="aplayer-inner" aria-label="音乐播放器"></div></div>
       </div>
     </section>
 
-    <section class="section-shell content-section" id="music" aria-labelledby="music-title">
-      <div class="music-board">
-        <div class="music-copy"><span class="section-kicker">05 / LITTLE MUSIC CORNER</span><h2 id="music-title">音乐<span class="gradient-text">角落</span> <span aria-hidden="true">♫</span></h2><p>写代码的时候，总得有一点背景音乐吧。</p><p class="music-hint">沿用旧站的歌单配置；点击才会连接第三方歌单接口，不自动播放。</p><button class="button button-primary" id="music-load" type="button">载入旧站歌单 <span aria-hidden="true">♫</span></button><p id="music-status" class="music-status" role="status" aria-live="polite">音乐是可选的，页面不依赖它也能正常浏览。</p></div>
-        <div class="music-player-shell"><div class="record-scene" aria-hidden="true"><div class="record"><span class="record-label">QCYA<br>✿<br>STEREO</span></div><span class="record-star">✦</span></div><div id="aplayer-inner" aria-label="音乐播放器"></div></div>
-      </div>
+    <section class="shell section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-board"><div><span class="section-index">05 / GET IN TOUCH</span><h2 id="contact-title">在互联网的<span class="gradient-ink">另一边</span>见<span class="heading-period">.</span></h2><p>想看代码，去 GitHub；想看视频，去 B 站。除此之外，这里不挂过期链接，也不展示私人项目。</p><div class="contact-links"><a href="https://github.com/qcya" target="_blank" rel="noopener noreferrer"><span>GitHub <small>公开仓库</small></span><strong aria-hidden="true">↗</strong></a><a href="https://space.bilibili.com/1576380674" target="_blank" rel="noopener noreferrer"><span>Bilibili <small>个人空间</small></span><strong aria-hidden="true">↗</strong></a></div></div><div class="contact-graphic" aria-hidden="true"><div class="contact-ring"><span>Q.</span></div><span class="contact-small-label">KEEP IN TOUCH — QCYA</span></div></div>
     </section>
 
-    <section class="section-shell content-section" id="contact" aria-labelledby="contact-title">
-      <div class="contact-board"><div><span class="section-kicker">06 / SAY HELLO!</span><h2 id="contact-title">期待和你<span class="gradient-text">相遇</span><span class="title-decoration">✿</span></h2><p>这里放的都是我现在对外使用的公开主页。想看代码可以去 GitHub，想看视频可以去 B 站。</p><div class="contact-links"><a href="https://github.com/qcya" target="_blank" rel="noopener noreferrer"><span>⌘ GitHub</span><span>↗</span></a><a href="https://space.bilibili.com/1576380674" target="_blank" rel="noopener noreferrer"><span>▷ Bilibili 主页</span><span>↗</span></a></div></div><div class="contact-art" aria-hidden="true"><span class="contact-big-star">✦</span><span class="contact-small-star">✧</span><span class="contact-heart">♡</span><span class="contact-caption">SEE YOU<br>AGAIN!</span></div></div>
-    </section>
-    <aside class="quote-strip section-shell" aria-label="小小一句话"><span class="quote-icon" aria-hidden="true">✧</span><p id="quote-text" aria-live="polite">愿每个奇思妙想，都有被实现的一天。</p><button id="quote-next" type="button" aria-label="换一句话" title="换一句话">换一句 ↻</button></aside>
+    <aside class="shell quote-strip"><span aria-hidden="true">✳</span><p id="quote-text" aria-live="polite">愿每个奇思妙想，都有被实现的一天。</p><button id="quote-next" type="button" aria-label="换一句话">换一句 ↻</button></aside>
   </main>
 
-  <footer class="site-footer"><div class="section-shell footer-inner"><div><a class="footer-brand" href="#home">✦ 青春沿岸 <span>QCYA</span></a><p>Made with curiosity, code &amp; a little bit of magic.</p></div><div class="footer-right"><a href="#home">回到顶部 ↑</a><span>© <span id="year">2026</span> 青春沿岸 · All rights reserved.</span></div></div></footer>
+  <footer class="site-footer"><div class="shell footer-wrap"><div><a href="#home" class="footer-logo">QCYA<span>.</span></a><p>由一点好奇心和很多行代码组成。</p></div><div class="footer-right"><a href="#home">回到顶部 ↑</a><span>© <span id="year">2026</span> 青春沿岸</span></div></div></footer>
 </body>
 </html>
