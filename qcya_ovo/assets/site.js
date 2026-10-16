@@ -60,7 +60,7 @@
         });
       });
     }, { rootMargin: '-22% 0px -60% 0px', threshold: 0 });
-    ['home','about','projects','xinghai','music','contact'].forEach(function (id) {
+    ['home','about','projects','music','contact'].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) observer.observe(el);
     });

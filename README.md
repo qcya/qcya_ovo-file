@@ -1,44 +1,46 @@
-# 青春沿岸 · QCYA 个人主页
+# 青春沿岸 / QCYA
 
-一个使用原生 HTML、CSS、JavaScript 构建的二次元风格个人主页。由早期静态页面改造而来，保留仓库自带的插画图片，展示个人介绍、项目、创作历程、音乐角落和公开社交入口。
+这是我的公开个人主页。用原生 HTML、CSS、JavaScript 构建，以浅粉 / 浅蓝平面设计和响应式排版为主，保留小尺寸个人头像、深浅色模式和可选音乐功能。
 
-## 打开与部署
+**站点：** https://qcya.github.io/qcya_ovo-file/
 
-- **直接预览：** 浏览器打开 `qcya_ovo/index.html`。
-- **GitHub Pages：** 在仓库 Settings → Pages 中选择从 `main` 分支的 `/ (root)` 目录发布。根目录 `index.html` 会跳转至完整页面。
-- **其他静态托管：** 将 `qcya_ovo/` 作为站点根目录即可。
-- 不需要 Node.js、构建步骤或后端。
+## 页面内容
 
-## 功能
+- 首页：纯 CSS 平面设计海报 / 个人简介
+- 关于：资料、技能标签与网站由来
+- 公开作品：音乐下载器、小白助手 AstrBot 插件、本站源代码
+- 音乐角落：只有主动点击按钮才尝试访问第三方旧歌单，不会自动播放
+- 联系入口：GitHub 主页和 [Bilibili 个人空间](https://space.bilibili.com/1576380674)
 
-- 粉蓝渐变、星海原创角色立绘、响应式布局（桌面与手机）
-- 主题切换（默认跟随系统，可保存偏好）
-- 项目分类筛选、顶部锚点导航、折叠菜单
-- 本地一言、自动年份、键盘操作和减少动画偏好支持
-- 可选旧歌单：用户主动点击后才加载本地 APlayer 和第三方 Meting 接口；第三方不可用时友好降级
+仅展示已经公开的项目。不包括任何未公开、尚未完成的私人项目，也不展示 TG bot 或旧视频直链。
 
-## 内容维护
+## 预览
 
-- 站点入口：`qcya_ovo/index.html`
-- 主要样式：`qcya_ovo/assets/site.css`
-- 页面交互：`qcya_ovo/assets/site.js`
-- 旧站图片：`qcya_ovo/img/milu.jpg`、`qcya_ovo/img/background.jpg`
-- 老版本的第三方静态库留在仓库中供历史参考，新站只按需使用原来的 APlayer。
+直接打开 `qcya_ovo/index.html`，或者运行本地静态 HTTP 服务器：
 
-项目展示和社交链接是直接写在 HTML 中的静态内容，更新项目时修改对应的 `project-card` 即可。
+```bash
+cd qcya_ovo
+python -m http.server 8000
+```
 
-## 关于旧地址
+打开 `http://localhost:8000/`。
 
-为避免旧链接失效，原来的 `contact.html` 和双层目录下的页面会跳转至新版。出于隐私考虑，新版不公开显示旧页面中的私人电话号码。
+## GitHub Pages
 
-### 注意
+GitHub Pages 设置为 `main` 分支、`/(root)` 目录。根目录的 `index.html` 会跳转到 `qcya_ovo/index.html`。提交到 `main` 后网站会自动更新。
 
-旧音乐接口 `api.mizore.cn` 并非本站提供，可能存在跨域、失效或音乐版权限制，因此**无法保证音乐一定能播放**。网站主体完全不依赖该接口。
+## 文件
 
-## 本次改版（星海 OC 版）
+| 文件 | 用途 |
+|---|---|
+| `qcya_ovo/index.html` | 页面结构与内容 |
+| `qcya_ovo/assets/site.css` | 平面设计样式、移动端布局与深浅主题 |
+| `qcya_ovo/assets/site.js` | 主题切换、导航、作品筛选、手动音乐加载 |
+| `qcya_ovo/assets/avatar.webp` | 站主头像（仅 34px 和 48px 展示） |
+| `qcya_ovo/static/APlayer-1.10.1/` | 原网站的播放器库，按需加载 JavaScript |
 
-- 原创角色星海替代旧站背景成为主视觉，保留明暗主题。
-- 导航头像使用用户当前公开头像素材（本地 `assets/avatar.webp`）。
-- 公开作品只列出可直接访问的仓库：音乐下载器、小白助手 AstrBot 插件、本站源码。
-- Bilibili 使用个人空间地址：`https://space.bilibili.com/1576380674`，不再链接旧视频；不展示 TG bot、未公开游戏或内部 AI 项目。
-- 星海 OC 素材来自站主提供的原创角色立绘；请勿擅自二次分发素材。
+仓库仍保留旧版静态素材作为历史文件，但最新版页面不再使用任何角色立绘。
+
+### 第三方服务
+
+旧版歌单依赖第三方 Meting API。由于服务可用性、跨域限制和版权限制，无法保证能够播放；接口不可用时不影响网站其余部分。
