@@ -1,0 +1,44 @@
+{
+  "display_name": "青春沿岸",
+  "handle": "qcya_ovo",
+  "site_url": "https://qcya.github.io/qcya_ovo-file/",
+  "description": "青春沿岸的个人主页。代码、视频、公开作品，以及找到我的方式。",
+  "intro": "做视频，也写一些自己会用的小工具。这里整理我的公开作品，以及你能找到我的地方。",
+  "github": "https://github.com/qcya",
+  "bilibili": "https://space.bilibili.com/1576380674",
+  "projects": [
+    {
+      "id": "music-downloader",
+      "published": true,
+      "name": "音乐下载器",
+      "platform": "Windows 10 / 11 · 64 位",
+      "type": "APPLICATION",
+      "glyph": "♫",
+      "caption": "SOUND / PLAYER / TOOL",
+      "description": "音乐搜索、下载、本地播放、歌单整理与双语同步歌词，集中在一个桌面工具里。",
+      "primary_label": "下载 Windows 版",
+      "primary_url": "https://github.com/qcya/netease-music-downloader/releases/latest",
+      "source_url": "https://github.com/qcya/netease-music-downloader",
+      "details_title": "功能与使用说明",
+      "features": ["搜索与批量下载，支持任务队列和失败重试。", "本地播放、自建歌单与双语同步歌词。", "桌面歌词和迷你窗口按需开启。"],
+      "instructions": "按钮会打开 GitHub 最新发布页。在 Assets 中选择 Windows 便携 EXE，下载后双击运行；不需要安装 Python。请以发布页说明为准，并仅使用有权下载和使用的音频。"
+    },
+    {
+      "id": "xiaobai",
+      "published": true,
+      "name": "小白助手",
+      "platform": "Python · AstrBot 插件",
+      "type": "PLUGIN",
+      "glyph": "</>",
+      "caption": "BOT / MANAGEMENT / DATA",
+      "description": "面向 QQ 群的管理与发言统计插件，包含排行榜、入群欢迎和独立可配置的管理功能。",
+      "primary_label": "查看安装说明",
+      "primary_url": "https://github.com/qcya/astrbot_plugin_su_xiaobai#readme",
+      "source_url": "https://github.com/qcya/astrbot_plugin_su_xiaobai",
+      "details_title": "安装方式与功能",
+      "features": ["今日、本周和累计发言排行。", "入群欢迎、头衔管理及可独立开关的群管理功能。", "安装前请核对仓库 README 中的 AstrBot 版本要求。"],
+      "instructions": "可在支持仓库地址安装的 AstrBot 插件界面填入下面的地址；具体安装步骤以仓库 README 为准。",
+      "copy_label": "复制插件仓库地址"
+    }
+  ]
+}
