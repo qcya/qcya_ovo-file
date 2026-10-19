@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafbff">
+  <meta name="description" content="{{NAME}} / {{HANDLE}} 的个人主页。视频创作、公开项目、工具下载与联系方式。">
+  <title>{{NAME}} / {{HANDLE}} · 个人主页</title>
+  <link rel="canonical" href="{{HOME_URL}}">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:title" content="{{NAME}} / {{HANDLE}}">
+  <meta property="og:description" content="做视频，也写一些自己会用的小工具。查看公开作品与平台入口。">
+  <meta property="og:url" content="{{HOME_URL}}">
+  <meta property="og:image" content="{{HOME_URL}}qcya_ovo/assets/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{NAME}}的粉蓝几何风格个人主页">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="qcya_ovo/assets/favicon.svg" type="image/svg+xml">
+  <script src="qcya_ovo/assets/theme.js?v=5"></script>
+  <link rel="stylesheet" href="qcya_ovo/assets/site.css?v=5">
+  <script defer src="qcya_ovo/assets/site.js?v=5"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <div class="ambient-layer" aria-hidden="true"><div class="ambient ambient-a"></div><div class="ambient ambient-b"></div></div>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" aria-label="{{NAME}}，返回首页">
+        <img class="brand-avatar" src="qcya_ovo/assets/avatar.webp" width="34" height="34" alt="">
+        <span>{{NAME}} <small>{{HANDLE}}</small></span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <a class="nav-link active" href="#home" aria-current="location">首页</a>
+        <a class="nav-link" href="#about">关于</a>
+        <a class="nav-link" href="#projects">作品</a>
+        <a class="nav-link" href="#contact">联系</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="theme-controls" data-js-only>
+          <button class="icon-button" id="theme-toggle" type="button" aria-label="切换明暗主题" aria-pressed="false"><span id="theme-icon" aria-hidden="true">☾</span></button>
+          <label class="sr-only" for="theme-mode">外观模式</label>
+          <select id="theme-mode" aria-label="外观模式">
+            <option value="system">跟随系统</option><option value="light">浅色</option><option value="dark">深色</option>
+          </select>
+        </div>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="展开导航"><span aria-hidden="true">☰</span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="shell hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">PERSONAL SPACE <span aria-hidden="true">/</span> EST. 2023</div>
+        <p class="hero-intro">你好，这里是</p>
+        <h1 id="hero-title">{{NAME}}<span class="hero-title-en">{{HANDLE}}<span class="period" aria-hidden="true">.</span></span></h1>
+        <p class="hero-lead">写点代码，做点视频，<br><span class="gradient-ink">把想法慢慢做出来。</span></p>
+        <p class="hero-desc">做视频，也写一些自己会用的小工具。这里整理我的公开作品，以及你能找到我的地方。</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">浏览公开作品 <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="{{GITHUB_URL}}" target="_blank" rel="noopener noreferrer">前往 GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-social"><span>也在这里</span><a href="{{BILIBILI_URL}}" target="_blank" rel="noopener noreferrer">Bilibili 个人主页 ↗</a></div>
+        <div class="hero-subline" aria-hidden="true"><span>PYTHON</span><span>FRONT-END</span><span>VIDEO</span><span>AI</span></div>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="graphic-grid"></div><div class="graphic-head"><span>DESIGN / DEVELOP / CREATE</span><span>✳ 001</span></div>
+        <div class="graphic-orbit orbit-one"></div><div class="graphic-orbit orbit-two"></div>
+        <div class="graphic-disc disc-pink"></div><div class="graphic-disc disc-blue"></div>
+        <span class="graphic-cross cross-top">✳</span><span class="graphic-cross cross-bottom">✦</span>
+        <div class="graphic-main-mark">{{HANDLE}}</div><div class="graphic-stamp">KEEP MAKING</div>
+        <div class="graphic-foot"><span>PERSONAL<br>PORTFOLIO</span><span>© {{HANDLE}} ↗</span></div>
+      </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div>CODE <span>✦</span> CREATE <span>✦</span> EXPLORE <span>✦</span> DESIGN <span>✦</span> CODE <span>✦</span> CREATE</div></div>
+    <section class="shell section" id="about" aria-labelledby="about-title">
+      <div class="section-header"><div><span class="section-index">01 / ABOUT</span><h2 id="about-title">简单<span class="gradient-ink">介绍</span></h2></div><p>兴趣很多，慢慢实践。</p></div>
+      <div class="about-layout">
+        <article class="surface about-card">
+          <span class="mini-label">HELLO, WORLD!</span>
+          <h3>喜欢二次元，<br>也喜欢把点子<span class="gradient-ink">做成东西</span>。</h3>
+          <p>日常会写 Python 和前端，制作视频，也会尝试 AI 能带来的新玩法。工具不一定复杂，能解决实际问题就值得折腾。</p>
+          <div class="about-geometric" aria-hidden="true"><i></i><i></i></div>
+        </article>
+        <div class="about-aside">
+          <article class="surface identity-card">
+            <div class="identity-header"><img class="identity-avatar" src="qcya_ovo/assets/avatar.webp" width="48" height="48" alt="{{NAME}}的头像" loading="lazy"><div><strong>{{NAME}}</strong><span>@{{HANDLE}}</span></div></div>
+            <dl class="identity-facts"><div><dt>兴趣</dt><dd>编程 · 二次元 · 视频</dd></div><div><dt>公开平台</dt><dd>GitHub / Bilibili</dd></div></dl>
+          </article>
+          <article class="surface skills-card"><h3>常用工具</h3><div class="skills"><span>Python</span><span>HTML / CSS</span><span>JavaScript</span><span>AI</span><span>视频剪辑</span><span>Git</span></div><div class="skills-rule" aria-hidden="true"><i></i><i></i><i></i></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="shell section" id="projects" aria-labelledby="projects-title">
+      <div class="section-header"><div><span class="section-index">02 / OPEN PROJECTS</span><h2 id="projects-title">公开<span class="gradient-ink">作品</span></h2></div><p>从这里开始使用，而不只是看源码。</p></div>
+      <div class="project-grid">
+        <article class="surface project-card">
+          <div class="project-visual project-v-a" aria-hidden="true"><div class="vis-top">01 / APPLICATION</div><div class="vis-disc">♫</div><span class="vis-micro">SOUND / PLAYER / TOOL</span></div>
+          <div class="project-body">
+            <span class="project-meta">WINDOWS 10 / 11 · 64 位</span><h3>音乐下载器</h3>
+            <p>音乐搜索、下载、本地播放、歌单整理与双语同步歌词，集中在一个桌面工具里。</p>
+            <div class="project-actions"><a class="button button-primary" href="{{MUSIC_DOWNLOAD}}" target="_blank" rel="noopener noreferrer">下载 Windows 版 <span aria-hidden="true">↗</span></a><a class="text-link" href="{{MUSIC_REPO}}" target="_blank" rel="noopener noreferrer">查看源码 ↗</a></div>
+            <details class="project-details"><summary>功能与使用说明</summary><div class="details-content"><p>支持本地歌单、同步歌词、桌面歌词和沉浸播放。桌面歌词需要在程序内手动开启。</p><p>点击下载入口会前往 GitHub 最新发布页，确认版本后选择便携 EXE。不会在本站自动下载或安装。</p><p>具体功能和系统要求以项目说明为准。</p></div></details>
+          </div>
+        </article>
+        <article class="surface project-card">
+          <div class="project-visual project-v-b" aria-hidden="true"><div class="vis-top">02 / PLUGIN</div><div class="vis-code">&lt;/&gt;</div><span class="vis-micro">BOT / MANAGEMENT / DATA</span></div>
+          <div class="project-body">
+            <span class="project-meta">PYTHON · ASTRBOT 插件</span><h3>小白助手</h3>
+            <p>面向 QQ 群的管理与发言统计插件，包含排行榜、入群欢迎和独立可配置的管理功能。</p>
+            <div class="project-actions"><a class="button button-primary" href="{{PLUGIN_DOCS}}" target="_blank" rel="noopener noreferrer">查看安装说明 <span aria-hidden="true">↗</span></a><a class="text-link" href="{{PLUGIN_REPO}}" target="_blank" rel="noopener noreferrer">查看源码 ↗</a></div>
+            <details class="project-details"><summary>安装方式与功能</summary><div class="details-content"><p>在 AstrBot 插件管理中使用下面的仓库地址安装，完成后按项目文档配置。请先确认 AstrBot 版本符合项目要求。</p><code>{{PLUGIN_REPO}}</code><button class="copy-button" type="button" data-copy="{{PLUGIN_REPO}}" data-copy-label="插件仓库地址" data-js-only>复制仓库地址</button><p>排行榜、宵禁、入群欢迎等功能可分别配置；实际功能以仓库说明为准。</p></div></details>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="shell section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-board">
+        <div><span class="section-index">03 / CONTACT</span><h2 id="contact-title">联系方式</h2><p>想看代码，去 GitHub；想看视频，去 B 站。</p>
+          <div class="contact-links"><a href="{{GITHUB_URL}}" target="_blank" rel="noopener noreferrer"><span>GitHub <small>账号：qcya</small></span><strong aria-hidden="true">↗</strong></a><a href="{{BILIBILI_URL}}" target="_blank" rel="noopener noreferrer"><span>Bilibili <small>{{NAME}}的个人空间</small></span><strong aria-hidden="true">↗</strong></a></div>
+          <div class="contact-copy" data-js-only><button class="copy-button" type="button" data-copy="{{HANDLE}}" data-copy-label="英文 ID">复制英文 ID</button><button class="copy-button" type="button" data-copy="{{BILIBILI_URL}}" data-copy-label="B 站主页链接">复制 B 站主页链接</button></div>
+        </div>
+        <div class="contact-graphic" aria-hidden="true"><div class="contact-ring"><span>✦</span></div><span class="contact-small-label">KEEP IN TOUCH</span></div>
+      </div>
+    </section>
+    <div class="shell copy-fallback" id="copy-fallback" hidden><label for="copy-value">自动复制不可用，请选中文本手动复制</label><div><input id="copy-value" type="text" readonly><button class="copy-button" type="button" id="copy-close">收起</button></div></div>
+  </main>
+  <footer class="site-footer"><div class="shell footer-wrap"><div><a class="footer-logo" href="#home">{{HANDLE}}<span aria-hidden="true">.</span></a><p>一点好奇心，一些正在实践的想法。</p></div><div class="footer-right"><a href="#home">回到顶部 ↑</a><span>© <span id="year">2026</span> {{NAME}}</span></div></div></footer>
+  <div class="toast" id="status" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
